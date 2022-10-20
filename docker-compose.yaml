@@ -1,0 +1,55 @@
+#BackEnd Spring Boot App
+version: '3.1'
+services:
+  app:
+    container_name: miras-azhar-midka-backend
+    image: miras-azhar-midka-backend
+    build:
+      context: hospital-management-service
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: always
+    depends_on:
+      - postgresqldb
+      - mongodb
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresqldb:5432/hospital
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: zxc
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_DATA_MONGODB_DATABASE: hospital
+      SPRING_DATA_MONGODB_HOST: mongodb
+      SPRING_DATA_MONGODB_PORT: 27017
+    networks:
+      - backend
+
+#Postgresql DataBase
+  postgresqldb:
+    image: postgres
+    container_name: miras-azhar-postgresql
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=zxc
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=hospital
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+    networks:
+      - backend
+
+#MongoDB DataBase
+  mongodb:
+    image: mongo:latest
+    container_name: miras-azhar-mongodb
+    ports:
+      - "27017:27017"
+    restart: always
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

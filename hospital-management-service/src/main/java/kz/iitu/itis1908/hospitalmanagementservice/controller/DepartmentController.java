@@ -40,7 +40,7 @@ public class DepartmentController {
   }
 
   @PostMapping()
-  @Operation(summary = "Method to create department by id")
+  @Operation(summary = "Method to create department")
   public ResponseEntity<DepartmentDTO> createDepartment(
       @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Request body of Department") @RequestBody DepartmentDTO departmentDTO) {
     return ResponseEntity.ok(departmentService.createDepartment(departmentDTO));

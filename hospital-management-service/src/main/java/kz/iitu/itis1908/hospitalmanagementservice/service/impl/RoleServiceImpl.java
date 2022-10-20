@@ -24,7 +24,7 @@ public class RoleServiceImpl implements RoleService {
       throw new CustomSecurityException(ApiMessages.INVALID_ROLE_NAME, HttpStatus.BAD_REQUEST);
     }
     Role saveRole = roleRepository.save(role);
-    log.info("Saving role {}", saveRole.getName());
+    log.info("Saving role - {}", saveRole.getName());
     return saveRole;
   }
 
@@ -33,7 +33,7 @@ public class RoleServiceImpl implements RoleService {
 
     Role role = roleRepository.findById(id).orElse(null);
     if (role != null) {
-      log.info("Getting role {} with id {}", role.getName(), id);
+      log.info("Getting role - {} with id - {}", role.getName(), id);
     }
 
     return role;
@@ -42,7 +42,7 @@ public class RoleServiceImpl implements RoleService {
   @Override
   public void deleteRole(Long id) {
     roleRepository.deleteById(id);
-    log.info("Role with id {} deleted", id);
+    log.info("Role with id - {} deleted", id);
   }
 
   @Override

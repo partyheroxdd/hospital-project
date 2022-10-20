@@ -1,5 +1,6 @@
 package kz.iitu.itis1908.hospitalmanagementservice.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,16 +21,20 @@ public class Appointment {
   @Id
   private Long appointmentId;
 
-  private Long doctorId;
+  private String doctorId;
 
-  private Long patientId;
+  private String patientId;
 
   private String status;
 
+  @JsonFormat(pattern = "dd.MM.yyyy")
   private LocalDateTime appointmentDate;
 
+  @JsonFormat(pattern = "dd.MM.yyyy")
   private LocalDateTime appointmentFinishDate;
 
-  private boolean accepted;
+  private Boolean accepted;
+
+  private Boolean finished;
 
 }

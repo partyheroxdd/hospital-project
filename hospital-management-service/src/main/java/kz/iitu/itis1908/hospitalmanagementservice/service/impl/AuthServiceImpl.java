@@ -1,7 +1,6 @@
 package kz.iitu.itis1908.hospitalmanagementservice.service.impl;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 import kz.iitu.itis1908.hospitalmanagementservice.exceptions.security.CustomSecurityException;
 import kz.iitu.itis1908.hospitalmanagementservice.model.Constants.ApiMessages;
@@ -59,7 +58,7 @@ public class AuthServiceImpl implements AuthService {
       username = user.getUsername();
       roles = user.getRoles();
       userRepository.save(user);
-      log.info("User {} successfully registered with role {}", userRegisterDto.getUsername(),
+      log.info("User - {} successfully registered with role - {}", userRegisterDto.getUsername(),
           userRegisterDto.getRoles());
     } catch (Exception e) {
       log.error(e.getMessage());
@@ -76,7 +75,7 @@ public class AuthServiceImpl implements AuthService {
       Authentication authentication = authenticationManager.authenticate(
           new UsernamePasswordAuthenticationToken(username, password));
       Set<Role> roles = userRepository.findByUsername(username).get().getRoles();
-      log.info("User successfully login {}", userLoginDto.getUsername());
+      log.info("User successfully login - {}", userLoginDto.getUsername());
       return tokenProvider.createToken(username, roles);
 
     } catch (AuthenticationException exception) {
@@ -105,7 +104,7 @@ public class AuthServiceImpl implements AuthService {
   public void changePassword(UserChangePasswordDTO userChangePasswordDTO) {
     User user = userRepository.findByUsername(userChangePasswordDTO.getUsername()).orElseThrow(
         () -> new CustomSecurityException(ApiMessages.BAD_CREDENTIALS, HttpStatus.BAD_REQUEST));
-    log.info("Find user {} to change password", user.getUsername());
+    log.info("Find user - {} to change password", user.getUsername());
     if (!passwordEncoder.matches(userChangePasswordDTO.getPassword(), user.getPassword())) {
       throw new CustomSecurityException(ApiMessages.BAD_CREDENTIALS, HttpStatus.BAD_REQUEST);
     }

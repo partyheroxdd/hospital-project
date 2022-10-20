@@ -117,7 +117,7 @@
         </configuration>
       </plugin>
     </plugins>
-    <finalName></finalName>
+    <finalName>miras-azhar-midka</finalName>
   </build>
 
 </project>

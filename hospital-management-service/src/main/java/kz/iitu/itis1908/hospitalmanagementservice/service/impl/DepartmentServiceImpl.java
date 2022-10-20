@@ -24,7 +24,7 @@ public class DepartmentServiceImpl implements DepartmentService {
   @Override
   public DepartmentDTO getDepartment(Long departmentId) {
     Department department = findDepartmentById(departmentId);
-    log.info("Get department with id {}", departmentId);
+    log.info("Get department with id - {}", departmentId);
     return DepartmentDTO.builder()
         .departmentId(department.getDepartmentId())
         .name(department.getName())
@@ -36,7 +36,7 @@ public class DepartmentServiceImpl implements DepartmentService {
     Department department = findDepartmentById(departmentDTO.getDepartmentId());
     department.setName(departmentDTO.getName());
     departmentRepository.save(department);
-    log.info("Update Department with id {}", departmentDTO.getDepartmentId());
+    log.info("Update Department with id - {}", departmentDTO.getDepartmentId());
     return departmentDTO;
   }
 
@@ -47,7 +47,7 @@ public class DepartmentServiceImpl implements DepartmentService {
         .name(departmentDTO.getName())
         .build();
     departmentRepository.save(department);
-    log.info("Department successfully created {}", department);
+    log.info("Department successfully created - {}", department.getDepartmentId());
     return departmentDTO;
   }
 
@@ -55,7 +55,7 @@ public class DepartmentServiceImpl implements DepartmentService {
   public void deleteDepartment(Long departmentId) {
     Department department = findDepartmentById(departmentId);
     departmentRepository.delete(department);
-    log.info("Delete department with id {}", departmentId);
+    log.info("Delete department with id - {}", departmentId);
   }
 
   @Override

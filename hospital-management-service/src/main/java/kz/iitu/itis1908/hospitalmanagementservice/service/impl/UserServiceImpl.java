@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
   @Override
   public UserDTO getUser(Long id) {
     User user = userRepository.findUserById(id);
-    log.info("Get user with id {}", id);
+    log.info("Get user with id - {}", id);
     return UserDTO.builder()
         .id(user.getId())
         .username(user.getUsername())
@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
         .roles(userDTO.getRoles())
         .build();
     userRepository.save(user);
-    log.info("User successfully created {}", user);
+    log.info("User successfully created - {}", user.getUsername());
     return userDTO;
   }
 
@@ -50,14 +50,14 @@ public class UserServiceImpl implements UserService {
     user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
     user.setRoles(userDTO.getRoles());
     userRepository.save(user);
-    log.info("User successfully updated with id {}", user.getId());
+    log.info("User successfully updated with id - {}", user.getId());
     return userDTO;
   }
 
   @Override
   public void deleteUser(Long id) {
     userRepository.deleteById(id);
-    log.info("Delete user with id {}", id);
+    log.info("Delete user with id - {}", id);
   }
 
   @Override

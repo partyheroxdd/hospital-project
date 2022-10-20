@@ -1,5 +1,6 @@
 package kz.iitu.itis1908.hospitalmanagementservice.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.LocalDate;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -28,9 +29,8 @@ public class Patient {
 
   private String address;
 
+  @JsonFormat(pattern = "dd.MM.yyyy")
   private LocalDate dateOfBirth;
-
-  private Integer numberOfAppointments;
 
   private String category;
 

@@ -3,8 +3,6 @@ S
 #hospital-management-service/HELP.md,b\2\b21c04fe48ff5ad2fdcf47b0d359c4a23da711b6
 ¨
 xhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/ValidateResetCodeDTO.java,2\6\26077f80ef042979451d841310e0f3c53ffe703a
- 
-phospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/UserLoginDto.java,e\7\e72ccfb9a4d357d4ef360c1a82a1d92040cecb1e
 ¬
 |hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/ForgotPasswordRequestDTO.java,8\b\8b85ab80d23d83dee382365bee8c5a91c55128ac
 ´
@@ -29,8 +27,6 @@ vhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementse
 uhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/security/TokenFilter.java,4\3\43465772e918ad7cfb788312b2a636b86f11725b
 š
 jhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/WebConfig.java,5\d\5d3f472e9e559d55c9a79ad1d90db9c7ed9e322a
-ž
-nhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/SwaggerConfig.java,4\d\4da180e0a5094a8bbe6b1369556c37afaa1ed968
 ®
 ~hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/HospitalManagementServiceApplication.java,2\2\22244881a515809ab0d85959dcb35db2b2198f8f
 T

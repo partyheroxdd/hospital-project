@@ -2,7 +2,6 @@ package kz.iitu.itis1908.hospitalmanagementservice.service;
 
 import java.util.List;
 import kz.iitu.itis1908.hospitalmanagementservice.model.dto.DepartmentDTO;
-import kz.iitu.itis1908.hospitalmanagementservice.model.dto.UserDTO;
 
 public interface DepartmentService {
 

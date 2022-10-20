@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserRegisterDto {
 
-  @Size(min = 12, max = 12, message = "Username length must be 12")
+  @Size(min = 12, max = 12, message = "Username length must be 12 phone form")
   private String username;
 
   @Size(min = 8, message = "Password length must be minimum 8, maximum 40")

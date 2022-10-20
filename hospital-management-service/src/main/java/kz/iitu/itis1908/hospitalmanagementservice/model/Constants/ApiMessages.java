@@ -10,5 +10,6 @@ public class ApiMessages {
   public static final String PATIENT_NOT_FOUND = "Patient with such id not found";
   public static final String DOCTOR_NOT_FOUND = "Doctor with such id not found";
   public static final String APPOINTMENT_NOT_FOUND = "Appointment with such id not found";
+  public static final String APPOINTMENT_ALREADY_EXISTS = "Doctor doesn't have free appointment at this time";
   public static final String DEPARTMENT_NOT_FOUND = "Department with such id not found";
 }
