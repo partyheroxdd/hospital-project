@@ -1,8 +1,6 @@
 
 S
 #hospital-management-service/HELP.md,b\2\b21c04fe48ff5ad2fdcf47b0d359c4a23da711b6
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 ¨
 xhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/ValidateResetCodeDTO.java,2\6\26077f80ef042979451d841310e0f3c53ffe703a
  

@@ -17,7 +17,7 @@ In this case, the project will be divided into the following modules
 - Administration: 
   the administrator role will allow you to keep records of doctors and patients, 
   he can carry out all the operations and also give different access to resources
-- Treatment:
+- Appointment:
   here you can see a list of all past, current and future treatments, change their status.
 - Doctor:
   doctors can view the list of appointments from the patient and decide whether to accept it or not and update status
@@ -27,7 +27,7 @@ In this case, the project will be divided into the following modules
 ### Roles
 
 - ROLE_PATIENT: crud operations with his appointment
-- ROLE_DOCTOR: crud operations with treatments, appointments
+- ROLE_DOCTOR: crud operations with patients, appointments
 - ROLE_ADMIN: crud operations with all personal: doctor and patients, and can get access to all treatments and appointments 
 
 
