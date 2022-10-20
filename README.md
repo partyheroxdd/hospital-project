@@ -28,6 +28,6 @@ In this case, the project will be divided into the following modules
 
 - ROLE_PATIENT: crud operations with his appointment
 - ROLE_DOCTOR: crud operations with patients, appointments
-- ROLE_ADMIN: crud operations with all personal: doctor and patients, and can get access to all treatments and appointments 
+- ROLE_ADMIN: crud operations with all personal: doctor and patients, and can get access to all treatments and appointments. 
 
 
