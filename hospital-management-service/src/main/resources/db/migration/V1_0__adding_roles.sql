@@ -10,4 +10,4 @@ ALTER COLUMN id SET DEFAULT nextval('roles_id_seq');
 INSERT INTO roles(name)
 VALUES ('ROLE_ADMIN'),
        ('ROLE_DOCTOR'),
-       ('ROLE_USER');
+       ('ROLE_PATIENT');

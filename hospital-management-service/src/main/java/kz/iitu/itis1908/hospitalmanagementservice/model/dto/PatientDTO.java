@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class PatientDTO {
 
-  private Long patientId;
+  private String patientId;
   private String fullName;
   private String city;
   private String district;

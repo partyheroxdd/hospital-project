@@ -35,10 +35,11 @@ public class UserServiceImpl implements UserService {
   public UserDTO createUser(UserDTO userDTO) {
     User user = User.builder()
         .username(userDTO.getUsername())
-        .password(userDTO.getPassword())
+        .password(passwordEncoder.encode(userDTO.getPassword()))
         .roles(userDTO.getRoles())
         .build();
     userRepository.save(user);
+    log.info("User successfully created {}", user);
     return userDTO;
   }
 
@@ -49,6 +50,7 @@ public class UserServiceImpl implements UserService {
     user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
     user.setRoles(userDTO.getRoles());
     userRepository.save(user);
+    log.info("User successfully updated with id {}", user.getId());
     return userDTO;
   }
 
