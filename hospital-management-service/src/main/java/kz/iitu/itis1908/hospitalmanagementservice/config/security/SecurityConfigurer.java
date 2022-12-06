@@ -16,9 +16,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(
-    prePostEnabled = true
-)
 @RequiredArgsConstructor
 public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
 
@@ -37,7 +34,6 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
 
     http.
         authorizeRequests()
-        .antMatchers("/api/auth/**").permitAll()
         .antMatchers("/api/roles/**").access("hasRole('ROLE_ADMIN')")
         .antMatchers("/api/users/**").access("hasRole('ROLE_ADMIN')")
         .antMatchers("/api/departments/**").access("hasRole('ROLE_ADMIN')")
@@ -57,7 +53,9 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
 
   @Override
   public void configure(WebSecurity web) throws Exception {
-    web.ignoring().antMatchers("/swagger-ui/**", "/api/v1/api-docs");
+    web.ignoring().antMatchers("/swagger-ui/**", "/api/v1/api-docs/**", "/api/auth/**", "/health",
+        "/actuator/**"
+    );
   }
 
 

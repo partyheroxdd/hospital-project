@@ -1,10 +1,6 @@
 
-S
-#hospital-management-service/HELP.md,b\2\b21c04fe48ff5ad2fdcf47b0d359c4a23da711b6
 ¨
 xhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/ValidateResetCodeDTO.java,2\6\26077f80ef042979451d841310e0f3c53ffe703a
-¬
-|hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/ForgotPasswordRequestDTO.java,8\b\8b85ab80d23d83dee382365bee8c5a91c55128ac
 ´
 ƒhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/security/CustomUserDetailsService.java,a\1\a1d6c33a2f550be6c6e1addf30489042eb5ad472
 ¶
@@ -17,16 +13,12 @@ yhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementse
 lhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/security/SecretKey.java,e\9\e97d0612d5e501cb21482c546d79ed04c0e6f575
 ¡
 qhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/security/ITokenProvider.java,0\c\0c43c8ed96f2aa38c59d0f050dc39436d6fd4917
-§
-whospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/security/jwt/JwtTokenProvider.java,e\c\ec33296c1ca7e63a7313cc3560b3dd7c608883e3
 ¦
 vhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/security/jwt/JwtsTokenHelper.java,e\8\e877fd0fe0087765486c3381bf04ec4326222f7b
 ¦
 vhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/security/jwt/IJwtTokenHelper.java,3\7\370ecaa7060b4c7d94e208336cad29f004ec1d32
 ¥
 uhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/security/TokenFilter.java,4\3\43465772e918ad7cfb788312b2a636b86f11725b
-š
-jhospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/WebConfig.java,5\d\5d3f472e9e559d55c9a79ad1d90db9c7ed9e322a
 ®
 ~hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/HospitalManagementServiceApplication.java,2\2\22244881a515809ab0d85959dcb35db2b2198f8f
 T

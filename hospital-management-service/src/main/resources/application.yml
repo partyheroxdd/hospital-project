@@ -1,0 +1,58 @@
+spring:
+  #PostgreSQL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hospital
+    username: postgres
+    password: zxc
+    driver-class-name: org.postgresql.Driver
+
+  #JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  #MongoDB
+  data:
+    mongodb:
+      database: hospital
+      host: localhost
+      port: 27017
+
+#JWT Token
+security:
+  jwt:
+    token:
+      secret-key: mirasmadiyevandazharadilkhan
+      expiration: 600000
+
+#Server
+server:
+  port: 8080
+
+#Swagger
+springdoc:
+  swagger-ui:
+    configUrl: /api/v1/api-docs/swagger-config
+    disable-swagger-default-url: true
+    url: /api/v1/api-docs
+  api-docs:
+    path: /api/v1/api-docs
+    version: openapi_3_0
+
+#Actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'health, prometheus, info'
+  endpoint:
+    metrics:
+      enabled: true
+
+#Application
+application:
+  title: Hospital Management System Application
+  version: V1.0
+
+
+

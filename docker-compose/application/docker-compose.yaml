@@ -5,8 +5,8 @@ services:
     container_name: miras-azhar-midka-backend
     image: miras-azhar-midka-backend
     build:
-      context: hospital-management-service
-      dockerfile: Dockerfile
+      context: ../../hospital-management-service
+      dockerfile: ../../hospital-management-service/Dockerfile
     ports:
       - "8080:8080"
     restart: always

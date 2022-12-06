@@ -5,42 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f326b663-4a83-4e31-9647-67ac5ff17046" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/controller/AppointmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/controller/DoctorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/controller/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/AppointmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/DoctorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/AppointmentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/DoctorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/PatientServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hospital-management-service/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4da180e0a5094a8bbe6b1369556c37afaa1ed968" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e72ccfb9a4d357d4ef360c1a82a1d92040cecb1e" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_registry_prometheus_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_common_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_common_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_agent_0_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/kafka-zookeeper/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d760547-b6c7-4564-bf7f-7d845c192a02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d760547-b6c7-4564-bf7f-7d845c192a02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d760547-b6c7-4564-bf7f-7d845c192a02/storage_v2/_src_/database/hospital.Ov7m7Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d760547-b6c7-4564-bf7f-7d845c192a02/storage_v2/_src_/database/hospital.Ov7m7Q/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d3f472e9e559d55c9a79ad1d90db9c7ed9e322a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b85ab80d23d83dee382365bee8c5a91c55128ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b21c04fe48ff5ad2fdcf47b0d359c4a23da711b6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec33296c1ca7e63a7313cc3560b3dd7c608883e3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/application/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hospital-management-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/security/SecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/security/SecurityConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/controller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/Constants/ApiMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/Constants/ApiMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/AppointmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/AppointmentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/DepartmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/DepartmentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/DoctorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/DoctorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/PatientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/PatientDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/UserRegisterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/dto/UserRegisterDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/entity/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/entity/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/model/entity/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/AppointmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/DepartmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/DoctorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/PatientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/security/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/security/jwt/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/AppointmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/resources/db/migration/V1_0__adding_roles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/resources/db/migration/V1_0__adding_roles.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +75,9 @@
       </map>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2FU6zQt0U0JdhA8ySbTWzttVZzh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -90,30 +86,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jdk.selected.JAVA_MODULE" value="openjdk-17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/yorg/repositories/java-univer/hospital-project/docker-compose/kafka-zookeeper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "spring.configuration.checksum": "f2cf273ca3bfea68b6fe4514400352b9",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker-compose/kafka-zookeeper" />
       <recent name="D:\SpringProjects\hospital-project" />
       <recent name="D:\SpringProjects\hospital-project\hospital-management-service" />
       <recent name="D:\SpringProjects\hospital-project\hospital-management-service\src\main\java\kz\iitu\itis1908\hospitalmanagementservice" />
       <recent name="D:\SpringProjects\hospital-project\hospital-management-service\src\main\resources\db" />
-      <recent name="D:\SpringProjects\hospital-project\hospital-management-service\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker-compose/application" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -122,46 +128,32 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yaml: Compose Deployment">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="hospital-management-service" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="hospital-management-service" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.HospitalManagementServiceApplication">
     <configuration name="HospitalManagementServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="hospital-management-service" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kz.iitu.itis1908.hospitalmanagementservice.HospitalManagementServiceApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="kz.iitu.itis1908.hospitalmanagementservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="kz.iitu.itis1908.hospitalmanagementservice.HospitalManagementServiceApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="application/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="sourceFilePath" value="docker-compose.yaml" />
+          <option name="sourceFilePath" value="docker-compose/application/docker-compose.yaml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.application/docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +175,12 @@
       <workItem from="1666188020438" duration="10623000" />
       <workItem from="1666204078831" duration="2024000" />
       <workItem from="1666266419462" duration="24654000" />
+      <workItem from="1666294361517" duration="2126000" />
+      <workItem from="1666335321444" duration="854000" />
+      <workItem from="1666753878304" duration="246000" />
+      <workItem from="1669716946500" duration="607000" />
+      <workItem from="1669884740290" duration="3088000" />
+      <workItem from="1670327000747" duration="2995000" />
     </task>
     <servers />
   </component>
@@ -199,6 +197,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

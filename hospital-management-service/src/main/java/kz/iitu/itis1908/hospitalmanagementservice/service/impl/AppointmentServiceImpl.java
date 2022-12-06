@@ -23,6 +23,7 @@ public class AppointmentServiceImpl implements AppointmentService {
 
   private final AppointmentRepository appointmentRepository;
   private final PatientRepository patientRepository;
+
   @Override
   public AppointmentDTO getAppointment(Long appointmentId) {
     Appointment appointment = findAppointmentById(appointmentId);
