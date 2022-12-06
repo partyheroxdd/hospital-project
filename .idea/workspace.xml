@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f326b663-4a83-4e31-9647-67ac5ff17046" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_registry_prometheus_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_common_0_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_common_0_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_0_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_agent_0_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/kafka-zookeeper/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d760547-b6c7-4564-bf7f-7d845c192a02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d760547-b6c7-4564-bf7f-7d845c192a02.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d760547-b6c7-4564-bf7f-7d845c192a02/storage_v2/_src_/database/hospital.Ov7m7Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d760547-b6c7-4564-bf7f-7d845c192a02/storage_v2/_src_/database/hospital.Ov7m7Q/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d3f472e9e559d55c9a79ad1d90db9c7ed9e322a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b85ab80d23d83dee382365bee8c5a91c55128ac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b21c04fe48ff5ad2fdcf47b0d359c4a23da711b6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec33296c1ca7e63a7313cc3560b3dd7c608883e3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/application/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/security/SecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/config/security/SecurityConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/security/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/security/jwt/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/java/kz/iitu/itis1908/hospitalmanagementservice/service/impl/AppointmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-management-service/src/main/resources/db/migration/V1_0__adding_roles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-management-service/src/main/resources/db/migration/V1_0__adding_roles.sql" afterDir="false" />
-    </list>
+    <list default="true" id="f326b663-4a83-4e31-9647-67ac5ff17046" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +150,7 @@
       <workItem from="1666753878304" duration="246000" />
       <workItem from="1669716946500" duration="607000" />
       <workItem from="1669884740290" duration="3088000" />
-      <workItem from="1670327000747" duration="2995000" />
+      <workItem from="1670327000747" duration="3426000" />
     </task>
     <servers />
   </component>
