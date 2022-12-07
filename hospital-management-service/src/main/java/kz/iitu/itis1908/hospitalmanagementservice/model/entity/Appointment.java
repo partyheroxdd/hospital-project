@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -15,6 +16,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 @Builder
+@ToString
 @Document(collection = "appointments")
 public class Appointment {
 
@@ -27,10 +29,8 @@ public class Appointment {
 
   private String status;
 
-  @JsonFormat(pattern = "dd.MM.yyyy")
   private LocalDateTime appointmentDate;
 
-  @JsonFormat(pattern = "dd.MM.yyyy")
   private LocalDateTime appointmentFinishDate;
 
   private Boolean accepted;

@@ -18,12 +18,35 @@ spring:
       host: localhost
       port: 27017
 
+  #Kafka
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: appointments
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.LongDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+    topic1:
+      name: appointment-request
+    topic2:
+      name: appointment-accept
+    topic3:
+      name: appointment-finish
 #JWT Token
 security:
   jwt:
     token:
       secret-key: mirasmadiyevandazharadilkhan
-      expiration: 600000
+      expiration: 3600000
 
 #Server
 server:

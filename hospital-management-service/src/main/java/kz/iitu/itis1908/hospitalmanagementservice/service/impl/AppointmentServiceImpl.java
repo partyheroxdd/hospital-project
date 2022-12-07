@@ -5,11 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import kz.iitu.itis1908.hospitalmanagementservice.exceptions.NotFoundException;
+import kz.iitu.itis1908.hospitalmanagementservice.kafka.producer.AppointmentProducer;
 import kz.iitu.itis1908.hospitalmanagementservice.model.Constants.ApiMessages;
 import kz.iitu.itis1908.hospitalmanagementservice.model.dto.AppointmentDTO;
 import kz.iitu.itis1908.hospitalmanagementservice.model.entity.Appointment;
+import kz.iitu.itis1908.hospitalmanagementservice.model.enums.EventStatus;
+import kz.iitu.itis1908.hospitalmanagementservice.model.event.AppointmentEvent;
 import kz.iitu.itis1908.hospitalmanagementservice.repository.AppointmentRepository;
-import kz.iitu.itis1908.hospitalmanagementservice.repository.PatientRepository;
 import kz.iitu.itis1908.hospitalmanagementservice.service.AppointmentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,7 +24,7 @@ import org.springframework.stereotype.Service;
 public class AppointmentServiceImpl implements AppointmentService {
 
   private final AppointmentRepository appointmentRepository;
-  private final PatientRepository patientRepository;
+  private final AppointmentProducer appointmentProducer;
 
   @Override
   public AppointmentDTO getAppointment(Long appointmentId) {
@@ -56,38 +58,65 @@ public class AppointmentServiceImpl implements AppointmentService {
         appointmentDTO.getAppointmentDate())) {
       throw new NotFoundException(ApiMessages.APPOINTMENT_ALREADY_EXISTS, HttpStatus.BAD_REQUEST);
     }
-    Appointment appointment = Appointment.builder()
-        .appointmentId(appointmentDTO.getAppointmentId())
-        .doctorId(appointmentDTO.getDoctorId())
-        .patientId(appointmentDTO.getPatientId())
-        .status("created")
-        .appointmentDate(appointmentDTO.getAppointmentDate())
-        .appointmentFinishDate(appointmentDTO.getAppointmentFinishDate())
-        .accepted(false)
-        .finished(false)
+
+    AppointmentEvent appointmentEvent = AppointmentEvent.builder()
+        .status(EventStatus.REQUEST)
+        .message("Appointment request message send:")
+        .appointmentDTO(appointmentDTO)
         .build();
-    appointmentRepository.save(appointment);
-    log.info("Appointment successfully created - {}", appointment.getAppointmentId());
+
+    appointmentProducer.sendAppointmentRequestMessage(appointmentEvent);
+
     return appointmentDTO;
   }
 
   @Override
   public void acceptAppointment(Long appointmentId) {
     Appointment appointment = findAppointmentById(appointmentId);
-    appointment.setStatus("accepted");
-    appointment.setAccepted(true);
-    appointmentRepository.save(appointment);
-    log.info("Appointment with id - {} accepted", appointmentId);
+
+    AppointmentDTO appointmentDTO = AppointmentDTO.builder()
+        .appointmentId(appointment.getAppointmentId())
+        .doctorId(appointment.getDoctorId())
+        .patientId(appointment.getPatientId())
+        .status(appointment.getStatus())
+        .appointmentDate(appointment.getAppointmentDate())
+        .appointmentFinishDate(appointment.getAppointmentFinishDate())
+        .accepted(appointment.getAccepted())
+        .finished(appointment.getFinished())
+        .build();
+
+    AppointmentEvent appointmentEvent = AppointmentEvent.builder()
+        .status(EventStatus.ACCEPT)
+        .message("Appointment accept message send:")
+        .appointmentDTO(appointmentDTO)
+        .build();
+
+    appointmentProducer.sendAppointmentAcceptMessage(appointmentEvent);
   }
 
   @Override
   public void finishAppointment(Long appointmentId) {
     Appointment appointment = findAppointmentById(appointmentId);
-    appointment.setStatus("finished");
-    appointment.setAppointmentFinishDate(LocalDateTime.now());
-    appointment.setFinished(true);
-    appointmentRepository.save(appointment);
-    log.info("Appointment with id - {} finished", appointmentId);
+
+    AppointmentDTO appointmentDTO = AppointmentDTO.builder()
+        .appointmentId(appointment.getAppointmentId())
+        .doctorId(appointment.getDoctorId())
+        .patientId(appointment.getPatientId())
+        .status(appointment.getStatus())
+        .appointmentDate(appointment.getAppointmentDate())
+        .appointmentFinishDate(appointment.getAppointmentFinishDate())
+        .accepted(appointment.getAccepted())
+        .finished(appointment.getFinished())
+        .build();
+
+    AppointmentEvent appointmentEvent = AppointmentEvent.builder()
+        .status(EventStatus.FINISH)
+        .message("Appointment finish message send:")
+        .appointmentDTO(appointmentDTO)
+        .build();
+
+    appointmentProducer.sendAppointmentFinishMessage(appointmentEvent);
+
   }
 
   @Override

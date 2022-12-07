@@ -1,0 +1,7 @@
+
+x
+java:S1192%"VDefine a constant instead of duplicating this literal "hasRole('ROLE_ADMIN')" 4 times.(Πεθόÿÿÿÿ8ϋ›άΊΞ0
+f
+java:S1874"DRemove this use of "WebSecurityConfigurerAdapter"; it is deprecated.(»Τ†ώÿÿÿÿ8άΊΞ0
+
+java:S1128"{Remove this unused import 'org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity'.(Τ¦ψ8ψ®—»Ξ0
